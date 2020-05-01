@@ -98,7 +98,7 @@ namespace CreditCards.UITests
                 WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(35));
 
                 IWebElement applyLink =
-                    wait.Until(ExpectedConditions.ElementToBeClickable(By.ClassName("customer-service-apply-now")));
+                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.ClassName("customer-service-apply-now")));
 
                 output.WriteLine($"{DateTime.Now.ToLongTimeString()} Found element Displayed={applyLink.Displayed} Enabled={applyLink.Enabled}");
                 output.WriteLine($"{DateTime.Now.ToLongTimeString()} Clicking element");

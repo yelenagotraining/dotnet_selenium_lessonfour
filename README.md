@@ -114,7 +114,7 @@ IWebElement applyLink =   wait.Until((d) => d.FindElement(By.LinkText("Easy: App
 ```
 ### Using pre-built waits
 * In order to use ExpectedConditions package we must first install
-   ```SeleniumExtras.WaitHelpers ```
+   ```xml <package id="DotNetSeleniumExtras.WaitHelpers" version="3.11.0" targetFramework="net472" /> ```
   
 ```C#
   [Fact]
